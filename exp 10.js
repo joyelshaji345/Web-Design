@@ -1,10 +1,10 @@
 const studentJSON = {
   "students": [
-    { "name": "Alice", "grade": 95 },
-    { "name": "Bob", "grade": 82 },
-    { "name": "Charlie", "grade": 98 },
-    { "name": "Diana", "grade": 76 },
-    { "name": "Eve", "grade": 88 }
+    { "name": "Abhi", "grade": 95 },
+    { "name": "Ali", "grade": 82 },
+    { "name": "Liza", "grade": 98 },
+    { "name": "Meril", "grade": 76 },
+    { "name": "Manu", "grade": 88 }
   ]
 };
 const sortOrder = "asc";
