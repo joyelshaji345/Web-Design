@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click Event Listener</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            min-height: 100vh;
+            background-color: #f0f8ff;
+            border: 5px solid lightblue;
+            box-sizing: border-box;
+        }
+        div {
+            padding: 20px;
+            margin: 20px;
+            border: 2px dashed #333;
+            background-color: #fff;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Special Click Tester</h1>
+    <p>Try clicking anywhere on this page.</p>
+
+    <ul>
+        <li><b>Normal Click:</b> Nothing will happen.</li>
+        <li><b>Shift + Click:</b> An alert will show the event name ('click').</li>
+        <li><b>Ctrl + Click:</b> An alert will show the HTML tag you clicked on.</li>
+    </ul>
+
+    <div>
+        <p>This is a paragraph inside a div. Try Ctrl-clicking on me!</p>
+        <button>Click Me</button>
+    </div>
+
+    <script>
+        document.addEventListener('click', function(event) {
+            if (event.shiftKey) {
+                alert(`Event Type: ${event.type}`);
+            } 
+            else if (event.ctrlKey) {
+                alert(`Clicked Element Tag: ${event.target.tagName}`);
+            }
+        });
+    </script>
+
+</body>
+</html>
